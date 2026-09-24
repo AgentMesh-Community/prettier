@@ -1,0 +1,39 @@
+{
+  "format": "agent-install-v1",
+  "runtimes": [
+    {
+      "name": "node",
+      "version": ">=22"
+    }
+  ],
+  "binaries": [],
+  "dependencies": [
+    {
+      "skill": "format-source-code",
+      "lockfile": "skills/format-source-code/scripts/package-lock.json",
+      "sha256": "52dca26e9255dde202476a31b48c098601c621ad9b945ac87d73589263b75093"
+    }
+  ],
+  "systems": [],
+  "ceilings": [],
+  "directories": [
+    {
+      "name": "records",
+      "purpose": "every record the descriptor names"
+    },
+    {
+      "name": "work",
+      "purpose": "inputs and drafts in progress"
+    }
+  ],
+  "job_seconds": 900,
+  "price": {
+    "sku": "default",
+    "covers": {
+      "agent": true
+    },
+    "price": {
+      "model": "free"
+    }
+  }
+}
