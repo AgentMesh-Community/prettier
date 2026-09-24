@@ -2,22 +2,22 @@
   "agentdoc": "v1",
   "package": {
     "name": "prettier",
-    "version": "3.9.10"
+    "version": "3.9.11"
   },
   "assembled_by": "tools/assemble-agentdoc.mjs --for-repository; assembled from the package, not signed",
   "sources": [
     {
       "id": "descriptor",
       "kind": "agent-descriptor",
-      "digest": "df048d90d4f2828bb82e7eb4e3c94e07f39a64117929ef32b0abd9bb7d518129",
-      "agent_version": "3.9.10",
+      "digest": "c1a1b186a50cd5b6a1ccdd6178fbac5f4464f6741e743386cc30ff170da23350",
+      "agent_version": "3.9.11",
       "signature": "unsigned"
     },
     {
       "id": "package",
       "kind": "plugin-package",
-      "digest": "bac7f10720d73248542e5bef44b2787e1235a78d7275ce863c7a8b3b5dabebc3",
-      "agent_version": "3.9.10",
+      "digest": "69c4c80c33a4c3723c413dddbd6cc1f95ffc20009e663b817b3e425f96736ee2",
+      "agent_version": "3.9.11",
       "signature": "unsigned"
     }
   ],

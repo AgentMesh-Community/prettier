@@ -1,6 +1,6 @@
 {
   "format": "agent-descriptor-v1",
-  "agent_version": "3.9.10",
+  "agent_version": "3.9.11",
   "does": "Runs prettier to format code to enforce a consistent style: it takes code files and gives back formatted code. prettier comes from the open-source project prettier/prettier, which AgentMesh did not write.",
   "offerings": [
     {

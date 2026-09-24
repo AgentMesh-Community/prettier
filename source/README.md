@@ -6,13 +6,17 @@ Runs prettier to format code to enforce a consistent style: it takes code files 
 
 - Format code to enforce a consistent style: Runs prettier on code files and hands back formatted code.
 
+## What it needs
+
+Nothing from outside: no keys, accounts, other services, other code or other software.
+
 ## Where it came from
 
 James Long wrote it and publish it at https://github.com/prettier/prettier. This agent was made from commit ee983c58097c756f83969d6a900496fa2ad05b78. AgentMesh did not write it; AgentMesh wrapped it so it can run as an agent. NOTICE.md says what AgentMesh added.
 
 ## Version
 
-This agent's own version is 3.9.10; it counts changes to this agent. The upstream version it was made from is 3.9.9 (the npm package prettier).
+This agent's own version is 3.9.11; it counts changes to this agent. The upstream version it was made from is 3.9.9 (the npm package prettier).
 
 ## Licence
 

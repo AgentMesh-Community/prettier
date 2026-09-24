@@ -49,23 +49,25 @@ TOOL="${TOOL:-$HOME/prettier/skills/format-code-to-enforce-a-consistent-style/sc
 
 Where the usage text or the example says prettier, run "$TOOL". Never run npx, npm install or npm ci yourself.
 
+## Where the work is
+
+Nothing here is found by looking. Every path is already written down:
+
+- The job folder is the path on the message's `job folder:` line, also $MESH_JOB_DIR. Deliver into $MESH_JOB_OUT. Write your reply to $MESH_JOB_ANSWER.
+- The sender's files are the paths under `attached:`. Use them exactly as written. With no `attached:` block, the material is in the message: save it under $MESH_JOB_OUT.
+- Records go in $AGENT_DIRECTORY_RECORDS/<last part of the job folder>/.
+- Your first tool call is a shell command that runs `TOOL="${AGENT_DEPS:+$AGENT_DEPS/52dca26e9255dde202476a31b48c098601c621ad9b945ac87d73589263b75093/node_modules/.bin/prettier}"; TOOL="${TOOL:-$HOME/prettier/skills/format-code-to-enforce-a-consistent-style/scripts/node_modules/.bin/prettier}"; "$TOOL"` on those paths.
+- Never use Glob, List, Grep or Read on /mesh, on any folder above the job folder, or with no path. This machine refuses them and the job ends with nothing delivered. If something is missing, write that to $MESH_JOB_ANSWER and stop.
+- List each file you deliver in $MESH_JOB_DIR/pieces.json: a JSON list with one entry per file, such as {"name": "<short name>", "step": "format-code-to-enforce-a-consistent-style", "path": "out/<file name>", "media_type": "<its media type>"}. A file that is not listed there is not delivered.
+- In the records folder, write each command you ran, word for word, with its exit code, to commands.txt.
+- Your reply in $MESH_JOB_ANSWER is one or two plain sentences saying what you ran and what you delivered.
+
 ## How to do the job
 
-1. Read the sender's message and work out what it asks for. Find what to work on: the files listed under `attached:`, or the text, links or code written in the message itself. Either one is enough.
-2. When what to work on is written in the message, save it to a file under MESH_JOB_OUT with a sensible name and extension (JavaScript as input.js, a list of links as links.txt), and work on that file. Words or a link that prettier takes on its command line can be given to it as written.
-3. Build one prettier command for it from the usage text below.
-4. Run it so what it makes lands in MESH_JOB_OUT: use the program's own option for an output folder when it has one, or run it from inside that folder.
-5. Check that it exited cleanly and made what was asked, list what it made in pieces.json, and reply.
-
-## Where the work goes
-
-- What to work on comes one of two ways: as files the sender attached, or as text, links or code the sender wrote in the message itself. Either one is enough. Attached files are listed under `attached:` in the message frame, already on this machine, each with its path.
-- When what to work on is written in the message, save it to a file under MESH_JOB_OUT with a sensible name and extension (JavaScript as input.js, a list of links as links.txt), and work on that file.
-- The only files for this job are the ones listed under `attached:` and the ones you make in the job folder (MESH_JOB_DIR). Apart from those, this skill's own folder and the places this page names, never search the machine, never list or read another folder, and never ask for permission to look anywhere else. If something is missing, say what is missing.
-- Put every file you make under the job folder's out/, which is in the variable MESH_JOB_OUT.
-- List each file in the job folder's pieces.json (MESH_JOB_DIR/pieces.json): a JSON list with one entry per file, such as {"name": "<short name>", "step": "format-code-to-enforce-a-consistent-style", "path": "out/<file name>", "media_type": "<its media type>"}. A file that is not listed there is not delivered.
-- Write each command you ran, word for word, with its exit code, to commands.txt in a folder named for this job (the last part of MESH_JOB_DIR) under the records directory your standing instructions name.
-- Write your reply to the sender in the answer file your standing instructions name (the variable MESH_JOB_ANSWER): one or two plain sentences saying what you ran and what you delivered.
+1. Read the sender's message and work out what it asks for. Words or a link that prettier takes on its command line can be given to it as written.
+2. Build one prettier command for it from the usage text below.
+3. Run it so what it makes lands in $MESH_JOB_OUT: use the program's own option for an output folder when it has one, or run it from inside that folder.
+4. Check that it exited cleanly and made what was asked, list what it made in pieces.json, and write your reply.
 
 ## Rules
 

@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "prettier",
-  "version": "3.9.10",
+  "version": "3.9.11",
   "description": "Runs prettier to format code to enforce a consistent style: it takes code files and gives back formatted code. prettier comes from the open-source project prettier/prettier, which AgentMesh did not write.",
   "license": "MIT",
   "homepage": "https://github.com/prettier/prettier",
@@ -18,7 +18,7 @@
     "net.agentdoc.package": {
       "descriptor": {
         "path": "descriptor.json",
-        "sha256": "df048d90d4f2828bb82e7eb4e3c94e07f39a64117929ef32b0abd9bb7d518129"
+        "sha256": "c1a1b186a50cd5b6a1ccdd6178fbac5f4464f6741e743386cc30ff170da23350"
       },
       "install": {
         "path": "install.json",
