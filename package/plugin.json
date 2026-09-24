@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "prettier",
-  "version": "3.9.9",
-  "description": "Runs prettier to format source code: it takes source code files and gives back consistently formatted code. prettier comes from the open-source project prettier/prettier, which AgentMesh did not write.",
+  "version": "3.9.10",
+  "description": "Runs prettier to format code to enforce a consistent style: it takes code files and gives back formatted code. prettier comes from the open-source project prettier/prettier, which AgentMesh did not write.",
   "license": "MIT",
   "homepage": "https://github.com/prettier/prettier",
   "repository": "https://github.com/AgentMesh-Community/prettier",
@@ -12,17 +12,17 @@
   "keywords": [
     "built-agent",
     "draft",
-    "format-source-code"
+    "format-code-to-enforce-a-consistent-style"
   ],
   "extensions": {
     "net.agentdoc.package": {
       "descriptor": {
         "path": "descriptor.json",
-        "sha256": "67628253aef943de20f0f133116c324d7eb5642156daa718e92f644e56ff4258"
+        "sha256": "df048d90d4f2828bb82e7eb4e3c94e07f39a64117929ef32b0abd9bb7d518129"
       },
       "install": {
         "path": "install.json",
-        "sha256": "77538aaf014ce73842ae255681120674a80eb89f0d3886beceb3141893061a99"
+        "sha256": "b968bee3d4e16b603ebb5ec42c81604ebd2c4813e4d49d6e3806e2ba946c3649"
       },
       "built": true,
       "draft": true,

@@ -2,22 +2,22 @@
   "agentdoc": "v1",
   "package": {
     "name": "prettier",
-    "version": "3.9.9"
+    "version": "3.9.10"
   },
   "assembled_by": "tools/assemble-agentdoc.mjs --for-repository; assembled from the package, not signed",
   "sources": [
     {
       "id": "descriptor",
       "kind": "agent-descriptor",
-      "digest": "67628253aef943de20f0f133116c324d7eb5642156daa718e92f644e56ff4258",
-      "agent_version": "3.9.9",
+      "digest": "df048d90d4f2828bb82e7eb4e3c94e07f39a64117929ef32b0abd9bb7d518129",
+      "agent_version": "3.9.10",
       "signature": "unsigned"
     },
     {
       "id": "package",
       "kind": "plugin-package",
-      "digest": "ae1e17023ce1a3308028cf4b54e89000cbd412f217bf524a378088e957a7ff01",
-      "agent_version": "3.9.9",
+      "digest": "bac7f10720d73248542e5bef44b2787e1235a78d7275ce863c7a8b3b5dabebc3",
+      "agent_version": "3.9.10",
       "signature": "unsigned"
     }
   ],
@@ -28,7 +28,7 @@
         "package"
       ],
       "name": "prettier",
-      "description": "Runs prettier to format source code: it takes source code files and gives back consistently formatted code. prettier comes from the open-source project prettier/prettier, which AgentMesh did not write."
+      "description": "Runs prettier to format code to enforce a consistent style: it takes code files and gives back formatted code. prettier comes from the open-source project prettier/prettier, which AgentMesh did not write."
     },
     "shape": {
       "from": [
@@ -42,19 +42,19 @@
       ],
       "offerings": [
         {
-          "id": "format-source-code",
-          "name": "Format source code",
-          "does": "Runs prettier on source code files and hands back consistently formatted code.",
+          "id": "format-code-to-enforce-a-consistent-style",
+          "name": "Format code to enforce a consistent style",
+          "does": "Runs prettier on code files and hands back formatted code.",
           "inputs": [
             {
-              "name": "source code files",
+              "name": "code, attached, or written in the message",
               "kind": "document",
               "required": true
             }
           ],
           "outputs": [
             {
-              "name": "consistently formatted code",
+              "name": "formatted code",
               "kind": "document",
               "when": "per_task"
             }

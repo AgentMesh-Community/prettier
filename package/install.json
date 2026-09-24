@@ -9,8 +9,8 @@
   "binaries": [],
   "dependencies": [
     {
-      "skill": "format-source-code",
-      "lockfile": "skills/format-source-code/scripts/package-lock.json",
+      "skill": "format-code-to-enforce-a-consistent-style",
+      "lockfile": "skills/format-code-to-enforce-a-consistent-style/scripts/package-lock.json",
       "sha256": "52dca26e9255dde202476a31b48c098601c621ad9b945ac87d73589263b75093"
     }
   ],

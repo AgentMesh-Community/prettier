@@ -1,22 +1,22 @@
 {
   "format": "agent-descriptor-v1",
-  "agent_version": "3.9.9",
-  "does": "Runs prettier to format source code: it takes source code files and gives back consistently formatted code. prettier comes from the open-source project prettier/prettier, which AgentMesh did not write.",
+  "agent_version": "3.9.10",
+  "does": "Runs prettier to format code to enforce a consistent style: it takes code files and gives back formatted code. prettier comes from the open-source project prettier/prettier, which AgentMesh did not write.",
   "offerings": [
     {
-      "id": "format-source-code",
-      "name": "Format source code",
-      "does": "Runs prettier on source code files and hands back consistently formatted code.",
+      "id": "format-code-to-enforce-a-consistent-style",
+      "name": "Format code to enforce a consistent style",
+      "does": "Runs prettier on code files and hands back formatted code.",
       "inputs": [
         {
-          "name": "source code files",
+          "name": "code, attached, or written in the message",
           "kind": "document",
           "required": true
         }
       ],
       "outputs": [
         {
-          "name": "consistently formatted code",
+          "name": "formatted code",
           "kind": "document",
           "when": "per_task"
         }
