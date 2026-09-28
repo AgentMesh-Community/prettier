@@ -2,9 +2,9 @@
 
 This agent wraps code AgentMesh did not write.
 
-The program it runs, prettier, is the npm package prettier version 3.9.9, the work of James Long, published at https://github.com/prettier/prettier. This agent was made from commit ee983c58097c756f83969d6a900496fa2ad05b78 and installs the package from the lockfile in its scripts folder. npm wrote that lockfile and the package.json beside it.
+The program it runs, prettier, is the npm package prettier version 3.9.9, the work of the Prettier authors, published at https://github.com/prettier/prettier. This agent was made from commit 88d8e96365bf9885dfe795ac9a15cd69ad8356f0 and installs the package from the lockfile in its scripts folder. npm wrote that lockfile and the package.json beside it.
 
-This agent's own version is 3.9.11; it counts changes to this agent. The upstream version it was made from is 3.9.9 (the npm package prettier).
+This agent's own version is 3.9.12; it counts changes to this agent. The upstream version it was made from is 3.9.9 (the npm package prettier).
 
 It is used under the project's own licence, MIT. The full text is in LICENSE, as the authors wrote it.
 
