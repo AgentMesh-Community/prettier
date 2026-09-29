@@ -2,22 +2,22 @@
   "agentdoc": "v1",
   "package": {
     "name": "prettier",
-    "version": "3.9.12"
+    "version": "3.9.11"
   },
   "assembled_by": "tools/assemble-agentdoc.mjs --for-repository; assembled from the package, not signed",
   "sources": [
     {
       "id": "descriptor",
       "kind": "agent-descriptor",
-      "digest": "a122801cb3634f7c374986ae28688c0783ddbe1a7a81529ba6f8370c6d8fa145",
-      "agent_version": "3.9.12",
+      "digest": "c1a1b186a50cd5b6a1ccdd6178fbac5f4464f6741e743386cc30ff170da23350",
+      "agent_version": "3.9.11",
       "signature": "unsigned"
     },
     {
       "id": "package",
       "kind": "plugin-package",
-      "digest": "a378e47d5a27110f380d799ce51602cb07f30bd1b4faad74fdbf448d22fd1049",
-      "agent_version": "3.9.12",
+      "digest": "69c4c80c33a4c3723c413dddbd6cc1f95ffc20009e663b817b3e425f96736ee2",
+      "agent_version": "3.9.11",
       "signature": "unsigned"
     }
   ],
@@ -28,7 +28,7 @@
         "package"
       ],
       "name": "prettier",
-      "description": "Runs prettier to format code files to enforce a consistent style: it takes code or source files and gives back formatted code. prettier comes from the open-source project prettier/prettier, which AgentMesh did not write."
+      "description": "Runs prettier to format code to enforce a consistent style: it takes code files and gives back formatted code. prettier comes from the open-source project prettier/prettier, which AgentMesh did not write."
     },
     "shape": {
       "from": [
@@ -42,12 +42,12 @@
       ],
       "offerings": [
         {
-          "id": "format-code-files-to-enforce-a-consistent-style",
-          "name": "Format code files to enforce a consistent style",
-          "does": "Runs prettier on code or source files and hands back formatted code.",
+          "id": "format-code-to-enforce-a-consistent-style",
+          "name": "Format code to enforce a consistent style",
+          "does": "Runs prettier on code files and hands back formatted code.",
           "inputs": [
             {
-              "name": "code or source, attached, or written in the message",
+              "name": "code, attached, or written in the message",
               "kind": "document",
               "required": true
             }
